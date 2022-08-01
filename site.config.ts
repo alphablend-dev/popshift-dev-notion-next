@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Laurent',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'learn in public, build in public',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
