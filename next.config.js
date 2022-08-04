@@ -17,15 +17,27 @@ module.exports = withBundleAnalyzer({
     ],
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
-  },
-  async redirects() {
-    return [
-      {
-        source: '/ioco',
-        destination: 'https://ioco.vercel.app/',
-        permanent: false
-      }
-    ]
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    async redirects() {
+      return [
+        {
+          source: '/about',
+          destination: 'https://google.com/about',
+          permanent: false
+        }
+      ]
+    }
   }
 })
+
+// module.exports = {
+//   async redirects() {
+//     return [
+//       {
+//         source: '/about',
+//         destination: 'https://google.com/about',
+//         permanent: false
+//       }
+//     ]
+//   }
+// }
