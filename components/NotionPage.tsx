@@ -29,7 +29,6 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-// import { GitHubShareButton } from './GitHubShareButton'
 
 import styles from './styles.module.css'
 
@@ -37,6 +36,9 @@ import styles from './styles.module.css'
 // dynamic imports for optional components
 // -----------------------------------------------------------------------------
 
+/* https://github.com/NotionX/react-notion-x */
+
+/* RENDERS CODE BLOCKS */
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
     // add / remove any prism syntaxes here
